@@ -6,10 +6,7 @@ locals {
     api_description = yamldecode(data.local_file.api_description_file.content)
 }
 
-### Compartment
-variable "compartment_id" {
-    type = string
-}
+
 resource "oci_apigateway_api" "api_resource" {
     for_each = fileset("${path.module}/openapi", "*.yaml")
     compartment_id = var.compartment_id
