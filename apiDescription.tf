@@ -1,5 +1,5 @@
 data "local_file" "api_description_file" {
-    filename = "./openapi.yaml"
+    filename = "./data/swagger.yaml"
 }
 
 locals {
