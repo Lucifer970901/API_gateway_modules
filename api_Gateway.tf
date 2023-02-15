@@ -1,5 +1,5 @@
 module "test_gateway" {
-   source = "./"
+   source = "./modules"
 
     display_name = "API_gateway"
     
