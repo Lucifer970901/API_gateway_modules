@@ -39,6 +39,7 @@ variable "display_name" {
 
 variable "endpoint_type" {
     type = string
+    default = "PUBLIC"
 }
 
 variable "function_id" {
