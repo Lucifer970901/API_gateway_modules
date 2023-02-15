@@ -8,7 +8,8 @@ resource "oci_apigateway_gateway" "gateway" {
     timeouts {
         
     create = "30m"
-    delete = "2h"
+    update = "20m"
+    delete = "5m"
    
   }
 }
