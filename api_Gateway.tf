@@ -1,4 +1,4 @@
-module "test_gateway" {
+module "gateway" {
    source = "./modules"
     
 }
