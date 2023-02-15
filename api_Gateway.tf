@@ -1,7 +1,7 @@
 module "test_gateway" {
    source = "./modules"
 
-    display_name = "API_gateway"
+   compartment_id = var.compartment_id
     
 }
 
