@@ -37,7 +37,7 @@ variable "display_name" {
     type = string
 }
 
-variable "endpoint_type" {
+variable "gateway_endpoint_type" {
     type = string
     default = "PUBLIC"
 }
