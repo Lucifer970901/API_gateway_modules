@@ -6,5 +6,8 @@ resource "oci_apigateway_gateway" "gateway" {
     subnet_id = "${var.subnet_id}"
     display_name = "API_gateway"
     timeouts {
-    create = "15m"}
+    create = "15m",
+    update = "10m",
+    delete = "5m"
+  }
 }
