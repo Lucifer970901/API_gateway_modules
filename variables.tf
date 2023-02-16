@@ -30,7 +30,7 @@ variable "subnet_id" {
 ### API Details
 variable "logging_level" {
     type = string
-    default = "Error"
+    default = "ERROR"
 }
 
 variable "display_name" {
