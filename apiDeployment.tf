@@ -1,7 +1,7 @@
 resource "oci_apigateway_deployment" "fieldservice_deployment" {
     #Required
     compartment_id = var.compartment_id
-    gateway_id = module.gateway.gateway_id_output
+    gateway_id = oci_apigateway_gateway.gateway.id
     path_prefix = local.api_description.basePath
     specification {
 
