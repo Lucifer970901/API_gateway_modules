@@ -35,6 +35,7 @@ variable "logging_level" {
 
 variable "display_name" {
     type = string
+    default = "Sample_API"
 }
 
 variable "gateway_endpoint_type" {
