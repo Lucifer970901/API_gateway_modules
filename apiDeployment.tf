@@ -1,6 +1,6 @@
 resource "oci_apigateway_deployment" "fieldservice_deployment" {
     #Required
-    depends_on = [oci_apigateway_gateway.gateway]
+    #depends_on = [oci_apigateway_gateway.gateway]
     compartment_id = var.compartment_id
     gateway_id = oci_apigateway_gateway.gateway.id
     path_prefix = local.api_description.basePath
